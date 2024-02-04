@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Ashmita.</strong>
+                        <p>
+                             I AM SO SORRY BACHA KABHI KABHI GALAT BOL JATA HUNGA MAI LAIKIN MERE INTENTIONS
+                             GALAT NAHI REHTE HONGE SORRY TUMKO AGAR HURT HUVI HOGI TU .YOU KNOW NA HOW MUCH I LOVE YOU BACHA 
+                             I WANT TO GIVE YOU EVERYTHING BBY I know I am not perfect. But I also know that I love you more than anyone ever will. And this love for you in my heart feels heavy when you are not around to receiv SOOOO SORRY BACHA 
+                             I JUST WANT KI TUJHE HRRR EK CHEEZ DE SAKU TUJHE HUG KAR SAKU YRRR.
+                             I LOVE YOU
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
